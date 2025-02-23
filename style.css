@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 30%;
+    z-index: 10000;
+}
+nav {
+    position: fixed; /* Cố định vị trí */
+    top: 0; /* Cách mép trên 0 */
+    left: 0; /* Cách mép trái 0 */
+    width: 100%; /* Chiều rộng 100% */
+    /* background-color: #333; Màu nền */
+    /* color: white; Màu chữ */
+    padding: 15px; /* Padding */
+    z-index: 10000; /* Đảm bảo nav nằm trên các phần tử khác */
+    background-color: #d4bdac;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    color:black;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+nav ul li a:hover{
+    color: #ff3636;
+    text-decoration: underline;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    min-width: 150px;
+    border-radius: 10px;
+    z-index: 1000;
+    transition: all 0.4s;
+}
+.dropdown-content li a{
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    transition: all 0.4s;
+}
+
+.xua__nay{
+
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+.xua{
+    background-color: #f1ad5e;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.nay{
+    background-color: #ffefef;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.container{
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    margin: 150px 30px 20px 30px;
+    border-bottom: 10px #d4bdac;
+}
+.container-intro{
+    margin: 20px 50px;
+}
+.container-intro h1{
+    font-size: 2.6rem;
+    margin-left: 30px;
+}
+.container-intro p{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.intro-info{
+    display: flex;
+}
+.intro-info img{
+    border-radius: 10px;
+}
+
+.products{
+    width: 98%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+}
+.products-item{
+    width: 25%;
+    height: 460px;
+    padding: 10px;
+    /* box-shadow: 7px 4px 15px 2px rgba(0, 0, 0, 0.4); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.products-item img{
+    width: 95%;
+    height: 440px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.products-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.products-info h1{
+    font-size: 24px;
+}
+.products-info a{
+    text-decoration: none;
+    width: 90%;
+    background-color: rgb(28, 210, 210);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    color: #ffff;
+    margin: 10px auto;
+    font-weight: 500;
+    border-radius: 6px;
+}
+.products-information{
+    width: 65%;
+}
+.products-info a:hover{
+    background-color: rgb(0, 146, 146);
+}
+.aoDaiXua{
+    background-image: url('https://img4.thuthuatphanmem.vn/uploads/2019/11/06/hinh-nen-canh-dong-co-xanh_030217283.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.aoDaiXua .products-item{
+    /* background-color: #ffd19c; */
+}
+.aoDaiXua .products-item:hover{
+    background-color:transparent;
+    transition: 0.5s ease;
+    box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.4);
+}
+.aoDaiNay{
+    background-color: #ffefef;
+}
+
+@media screen and (max-width: 900px){
+    .products{
+        display: block;
+    }
+    .products-item{
+        width: 100%;
+    }
+    .intro-info{
+        display: block;
+    }
+    .intro-info img{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+footer{
+    background-color: #d4bdac;
+    padding: 10px;
+    margin-top: 100px;
+}
+.copyright{
+    text-align: center;
+    padding-top: 10px;
+}

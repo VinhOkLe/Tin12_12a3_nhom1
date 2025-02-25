@@ -13,14 +13,12 @@ header{
     z-index: 10000;
 }
 nav {
-    position: fixed; /* Cố định vị trí */
-    top: 0; /* Cách mép trên 0 */
-    left: 0; /* Cách mép trái 0 */
-    width: 100%; /* Chiều rộng 100% */
-    /* background-color: #333; Màu nền */
-    /* color: white; Màu chữ */
-    padding: 15px; /* Padding */
-    z-index: 10000; /* Đảm bảo nav nằm trên các phần tử khác */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 10000;
     background-color: #d4bdac;
 }
 nav ul{
@@ -70,25 +68,7 @@ nav ul li a:hover{
     transition: all 0.4s;
 }
 
-.xua__nay{
-
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px 20px;
-}
-.xua{
-    background-color: #f1ad5e;
-    padding: 20px 30px;
-    border-radius: 10px;
-}
-.nay{
-    background-color: #ffefef;
-    padding: 20px 30px;
-    border-radius: 10px;
-}
-
 .container{
-    /* display: flex; */
     align-items: center;
     justify-content: space-between;
     margin: 150px 30px 20px 30px;
@@ -128,7 +108,6 @@ nav ul li a:hover{
     width: 25%;
     height: 460px;
     padding: 10px;
-    /* box-shadow: 7px 4px 15px 2px rgba(0, 0, 0, 0.4); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,9 +155,6 @@ nav ul li a:hover{
     background-repeat: no-repeat; 
     background-position: center;
 }
-.aoDaiXua .products-item{
-    /* background-color: #ffd19c; */
-}
 .aoDaiXua .products-item:hover{
     background-color:transparent;
     transition: 0.5s ease;
@@ -186,6 +162,12 @@ nav ul li a:hover{
 }
 .aoDaiNay{
     background-color: #ffefef;
+}
+
+.video{
+    width: 74%;
+    height: 430px;
+    margin: 0 13% 0 10%;
 }
 
 @media screen and (max-width: 900px){
